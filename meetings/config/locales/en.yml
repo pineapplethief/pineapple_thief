@@ -1,0 +1,35 @@
+# English strings go here for Rails i18n
+en:
+  button_create_meeting: Create new meeting
+
+  label_meetings: Meetings
+  label_new_meeting: New meeting
+  label_meeting: Meeting
+  label_create_meeting: Create new meeting
+
+  description_meeting_topic: "Topic:"
+  description_meeting_location: "Location:"
+  description_meeting_description: "Goals & Objectives:"
+  description_meeting_results: "Summary of the meeting:"
+  description_meeting_startdate: "Date and time when meeting begins:"
+  description_meeting_enddate: "Estimated date and time when meeting ends:"
+
+  field_location: "Location of the meeting:"
+  field_start: "Date & time when meeting begins:"
+  field_end: "Estimated date & time when meeting ends:"
+  field_results: "Summary of the meeting:"
+  field_topic: "Topic:"
+  field_users: "Appoint participants for the meeting:"
+
+  notice_meeting_successful_create: Meeting %{id} created succesfully.
+
+  text_choose_user: "Select user"
+
+  validation_error_dates_are_wrong: Date and time of the beginning of the meeting must be before its ending!
+  validation_error_location_busy: 'Уже есть совещание в этом месте в это время'
+  validation_error_user_busy: One of the appointed people will be busy. Change time of meeting or exclude him.
+  validation_error_no_users: Choose at least one person
+
+  permission_create_meetings: Create meeting
+
+  role_meetings_manager: Manage meetings

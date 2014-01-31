@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    select2-rails (3.5.2)
+      thor (~> 0.14)
+    thor (0.18.1)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  select2-rails

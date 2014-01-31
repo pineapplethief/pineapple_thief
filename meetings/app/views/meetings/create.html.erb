@@ -1,0 +1,25 @@
+<% html_title l(:label_new_meeting) %>
+
+<h2><%= l(:label_new_meeting) %></h2>
+
+
+<%= labelled_form_for @meeting, :url => {:controller => "meetings", :action => "create", :method => "post"},
+                      :html => {:id => 'meeting-form', :multipart => true} do |f| %>
+    <%= error_messages_for 'meeting' %>
+
+    <div class="box tabular">
+      <div id="all_attributes">
+        <%= render :partial => 'meetings/form', :locals => {:f => f} %>
+
+       <!-- <p id="attachments_form"><label><%#= l(:label_attachment_plural) %></label>
+          <%#= render :partial => 'attachments/form', :locals => {:container => @meeting} %></p>
+          -->
+      </div>
+    </div>
+
+    <%= submit_tag l(:button_create_meeting) %>
+<% end %>
+
+<% content_for :header_tags do %>
+    <%= robot_exclusion_tag %>
+<% end %>

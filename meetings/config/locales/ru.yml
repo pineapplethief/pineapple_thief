@@ -1,0 +1,36 @@
+# Russian strings go here for Rails i18n
+ru:
+  button_create_meeting: Создать новое совещание
+
+  label_meetings: Совещания
+  label_new_meeting: Новое совещание
+  label_meeting: Совещание
+  label_create_meeting: Создать новое совещание
+
+
+  description_meeting_topic: "Тема совещания:"
+  description_meeting_location: "Место проведения совещания:"
+  description_meeting_description: "Описание целей и задач совещания:"
+  description_meeting_results: "Описание результатов совещания:"
+  description_meeting_startdate: "Дата и время начала совещания:"
+  description_meeting_enddate: "Планируемые дата и время окончания совещания:"
+
+  field_location: "Место проведения совещания:"
+  field_start: "Дата и время начала совещания:"
+  field_end: "Планируемые дата и время конца совещания:"
+  field_results: "Результаты и итоги совещания:"
+  field_topic: "Тема совещания:"
+  field_users: "Выберите участников совещания:"
+
+  notice_meeting_successful_create: Совещание %{id} создано.
+
+  text_choose_user: Выберите пользователя
+
+  validation_error_dates_are_wrong: Дата начала не может быть позднее даты конца совещания!
+  validation_error_location_busy: Уже есть совещание в этом месте в это время
+  validation_error_user_busy: Один из выбранных вами людей уже занят в это время
+  validation_error_no_users: Выберите хотя бы одного пользователя!
+
+  permission_create_meetings: Создать совещание
+
+  role_meetings_manager: Управление совещаниями

@@ -1,0 +1,19 @@
+<% html_title @meeting.topic %>
+
+<h2><%=l(:label_meeting)%></h2>
+
+    <p><%=l(:description_meeting_topic)%>&nbsp; <%= @meeting.topic %></p>
+    <p><%=l(:description_meeting_location)%>&nbsp; <%= @meeting.location %></p>
+    <p><%=l(:description_meeting_description)%>&nbsp; <%= @meeting.description %></p>
+    <p><%=l(:description_meeting_results)%>
+        <p><%= @meeting.results %></p>
+    </p>
+    <p><%=l(:description_meeting_startdate)%>&nbsp; <%= @meeting.start %></p>
+    <p><%=l(:description_meeting_enddate)%>&nbsp; <%= @meeting.end %></p>
+
+<% !@meeting.users.empty? do %>
+<ul><%= @meeting.users.each do |user| %>
+        <li><%= user.name %></li>
+   <% end %>
+</ul>
+<% end %>

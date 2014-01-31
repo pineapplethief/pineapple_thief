@@ -1,0 +1,15 @@
+<% html_title l(:label_meetings) %>
+
+<h2><%= l(:label_meetings)%></h2>
+
+<ul>
+    <% @meetings.each do |meeting| %>
+    <li>
+      <%= link_to(meeting.topic, :controller => "meetings", :action => "show", :id => meeting.id) %>
+    </li>
+    <% end %>
+</ul>
+
+<p>
+    <%= link_to(l(:label_create_meeting), :controller => "meetings", :action => "create", :method => "get") %>
+</p>
